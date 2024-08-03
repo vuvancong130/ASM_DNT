@@ -107,12 +107,22 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+implementation project(':react-native-track-player')
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
     } else {
         implementation jscFlavor
     }
+        implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+        implementation("com.google.firebase:firebase-analytics")
+        implementation project(':react-native-vector-icons')
 }
 
+project.ext.vectoricons = [
+    iconFontsDir: "../../node_modules/react-native-vector-icons/Fonts",
+    iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf', 'FontAwesome.ttf' ] // Specify font files
+]
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+apply plugin: 'com.google.gms.google-services'

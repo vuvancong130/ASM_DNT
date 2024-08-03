@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601650076053",
+    "project_id": "pccn-36d42",
+    "storage_bucket": "pccn-36d42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601650076053:android:785f32a2ee476e1e20be9c",
+        "android_client_info": {
+          "package_name": "com.asm_ph45671"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv-SDqKSVtUZNk_NSN74pWFXTzo5I0P00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
